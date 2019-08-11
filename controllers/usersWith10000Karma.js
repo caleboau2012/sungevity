@@ -1,4 +1,3 @@
-var axios = require("axios");
 var services = require("../services");
 var topStoriesURL =
   "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty";
@@ -54,7 +53,6 @@ module.exports = (req, res) => {
               res.send(parsed);
             })
             .catch(err => {
-              // console.log(err);
               res
                 .status(400)
                 .send("An error occured while fetching the titles");

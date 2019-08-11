@@ -1,7 +1,5 @@
-var axios = require("axios");
 var moment = require("moment");
 var services = require("../services");
-var titles = []; // titles to be accumulated.
 var newStoriesURL =
   "https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty";
 
